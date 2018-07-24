@@ -29,7 +29,7 @@
 
 </head>
 
-<body id="admin-page">
+<body id="admin-page" style="width: 1200px;">
 
 <div id="wrapper">
 

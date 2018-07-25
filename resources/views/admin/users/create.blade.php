@@ -14,7 +14,7 @@
     </div>
     <div class="form-group">
         {!! Form::label('role_id','Role') !!}
-        {!! Form::select('role_id',['0'=>'Choose option']+$roles,null,['class'=>'form-control','style'=>'height:35px' ]) !!}
+        {!! Form::select('role_id',[''=>'Choose option']+$roles,null,['class'=>'form-control','style'=>'height:35px' ]) !!}
     </div>    
     <div class="form-group" style="height:65px" >
         {!! Form::label('is_active','Status') !!}
@@ -22,14 +22,14 @@
     </div>
     
     <div class="form-group" style="height:65px" >
-        {!! Form::label('file','Choose file') !!}
-        {!! Form::file('file', null,['class'=>'form-control']) !!}
+        {!! Form::label('photo_id','Choose photo') !!}
+        {!! Form::file('photo_id', null,['class'=>'form-control']) !!}
     </div>
     
     
     <div class="form-group">
         {!! Form::label('password','Password') !!}
-        {!! Form::password('password',['class'=>'form-control']) !!}
+        {!! Form::password('password',null,['class'=>'form-control']) !!}
     </div>
     
     <br>

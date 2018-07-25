@@ -22,9 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('admin/users','AdminUsersController');
 
 
-Route::get('admin/users/create','AdminUsersController@create');
+Route::get('admin/users/create','AdminUsersController@create')->name('create');
 
-Route::post('/', 'AdminUsersController@store');
+Route::get('admin/users/{id}/edit','AdminUsersController@edit')->name('edit');
 
 Route::get('/admin', function(){
     return view('admin.index');

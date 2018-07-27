@@ -47,4 +47,9 @@ class User extends Authenticatable
         return $this->hasMany('App\Post');
         
     }
+     public function post($id){
+        
+        return $this->hasMany('App\Post')->whereId($id);
+        
+    }
 }

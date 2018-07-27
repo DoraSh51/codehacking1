@@ -10,11 +10,11 @@
             <thead>
                 <tr>
                     <th>Id</th>
+                    <th>Photo</th>
                     <th>Title</th>
                     <th>Body</th>
                     <th>User</th>
                     <th>Category</th>
-                    <th>Photo</th>
                     <th>Created at</th>
                     <th>Updated at</th>
                     
@@ -25,11 +25,12 @@
             @foreach ($posts as $post)
             <tr>
                 <td>{{$post->id}}</td>
-                <td><a href="#">{{$post->title}}</a></td>
-                <td>{{$post->body}}></td>
-                <td>{{$post->user->name}}</td>
-                <td>{{$post->category ? $post->category->name : 'No category'}} </td>
                 <td><img height="50" src="/images/{{$post->photo ? $post->photo->path : '/images/noimage.jpg'}}" ></td>
+                <td>{{$post->title}}</td>
+                <td>{{str_limit($post->body,20)}}</td>
+                <td><a href="{{route('postedit', [ $post->id])}}">{{$post->user->name}}</a></td>
+            <!--    <td>{{$post->user->name}}</td> -->
+                <td>{{$post->category ? $post->category->name : 'No category'}} </td>
             <!--    <td>{{$post->photo_id}}</td> -->
                 <td>{{$post->created_at }}</td>
                 <td>{{$post->updated_at }}</td>

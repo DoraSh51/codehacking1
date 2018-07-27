@@ -9,8 +9,8 @@
             <file>file:/D:/wamp/www/codehacking/routes/web.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/layouts/admin.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/posts/create.blade.php</file>
-            <file>file:/D:/wamp/www/codehacking/app/Http/Requests/UsersRequest.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/AdminUsersController.php</file>
+            <file>file:/D:/wamp/www/codehacking/app/Http/Requests/UsersRequest.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Post.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/Controller.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Middleware/Admin.php</file>
@@ -25,6 +25,7 @@
             <file>file:/D:/wamp/www/codehacking/app/User.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Requests/UsersEditRequest.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/AdminPostsController.php</file>
+            <file>file:/D:/wamp/www/codehacking/app/Category.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/users/show.blade.php</file>
         </group>
     </open-files>

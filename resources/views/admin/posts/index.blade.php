@@ -28,7 +28,7 @@
                 <td><a href="#">{{$post->title}}</a></td>
                 <td>{{$post->body}}></td>
                 <td>{{$post->user->name}}</td>
-                <td>{{$post->category_id}} </td>
+                <td>{{$post->category ? $post->category->name : 'No category'}} </td>
                 <td><img height="50" src="/images/{{$post->photo ? $post->photo->path : '/images/noimage.jpg'}}" ></td>
             <!--    <td>{{$post->photo_id}}</td> -->
                 <td>{{$post->created_at }}</td>

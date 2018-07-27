@@ -14,7 +14,7 @@
         <div class="form-group">
             {!! Form::label('category_id','Category') !!}
         <!--    {!! Form::text('category_id',null,['class'=>'form-control']) !!}-->
-            {!! Form::select('category_id', array('1'=>'PHP', '2'=>'C#'),null,['class'=>'form-control','style'=>'height:35px' ]) !!}
+            {!! Form::select('category_id', [''=>'Choose Category']+$categories,null,['class'=>'form-control','style'=>'height:35px' ]) !!}
         </div>
 
         <div class="form-group" style="height:65px" >

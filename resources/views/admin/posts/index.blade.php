@@ -4,7 +4,7 @@
 
     <h3>Posts</h3>
     @if (Session::has('deleted_post'))
-    <p class="bg-danger"> {{session('deleted_user')}}</p>
+    <p class="bg-danger"> {{session('deleted_post')}}</p>
     @endif
         <table class="table">
             <thead>

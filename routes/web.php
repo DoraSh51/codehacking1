@@ -32,12 +32,15 @@ Route::get('admin/users/{id}/edit','AdminUsersController@edit')->name('edit');
     Route::resource('admin/users','AdminUsersController');    
     
     Route::resource('admin/posts','AdminPostsController'); 
-        
+    
+    Route::resource('admin/categories','AdminCategoriesController');
+    
 // });
 Route::get('admin/posts/create','AdminPostsController@create')->name('postcreate');
 
 Route::get('admin/posts/{id}/edit','AdminPostsController@edit')->name('postedit');
 
+Route::get('admin/categories/{id}/edit','AdminCategoriesController@edit')->name('categoryedit');
 
 Route::get('/admin', function(){
     return view('admin.index');

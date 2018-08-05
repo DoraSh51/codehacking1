@@ -4,7 +4,7 @@
 
     <h3>Edit Post</h3>
     <div class="col-sm-4">
-        <img class="img-responsive" src="{{'/images/'.$post->photo->path}}">
+        <img class="img-responsive" src="{{$post->photo ? '/images/'.$user->photo->path : 'http://placehold.it/150x15s0'}}">
     </div>
     <div class="col-sm-8">
         {!! Form::model($post,['method'=>'PATCH', 'action'=>['AdminPostsController@update',$post->id ], 'files'=> true]) !!}

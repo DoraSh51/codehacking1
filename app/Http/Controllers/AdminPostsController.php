@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Photo;
 use App\Category;
+use App\Comment;
 use App\Http\Requests\PostsCreateRequest;
 
 use Illuminate\Support\Facades\Session;
@@ -80,6 +81,10 @@ class AdminPostsController extends Controller
     public function show($id)
     {
         //
+        $comment = Comment::findOrFail($id);
+        
+        return $comment;
+    //    return view('admin.comments.show', compact('comment'));
     }
 
     /**
@@ -146,5 +151,18 @@ class AdminPostsController extends Controller
         
          return redirect('/admin/posts');
         //
+    }
+    
+    public function post($id){
+        
+        $post = Post::findOrFail($id)  ; 
+        
+   //     $comments = $post->comments()->whereIsActive(1);
+       
+        $comments = Comment::all()->where('post_id', $id)->where('is_active',1);
+        
+        
+    //    return $comments;
+        return view('post',compact('post','comments'));
     }
 }

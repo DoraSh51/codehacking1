@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h3>Edit Users</h3>
+<h3>Edit User</h3>
 <div class="row">
     <div class="col-sm-3">
         <img height ="150" src="{{$user->photo ? '/images/'.$user->photo->path : 'http://placehold.it/150x15s0'}}">

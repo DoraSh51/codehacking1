@@ -24,7 +24,7 @@ class AdminPostsController extends Controller
     public function index()
     {
         //
-        $posts = Post::all();
+        $posts = Post::paginate(2);
         
         return view('admin.posts.index', compact('posts'));
     }
@@ -81,10 +81,10 @@ class AdminPostsController extends Controller
     public function show($id)
     {
         //
-        $comment = Comment::findOrFail($id);
+        $post = Post::findOrFail($id);
+        $comment = $post->comments;
         
-        return $comment;
-    //    return view('admin.comments.show', compact('comment'));
+        return view('admin.comments.show', compact('comment'));
     }
 
     /**
@@ -96,10 +96,12 @@ class AdminPostsController extends Controller
     public function edit($id)
     {
         //
+   
        
         $post = Post::findOrFail($id);
         
-        $categories = Category::pluck('name','id')->all();
+        $categories = Category::pluck('name','id','user')->all();
+        
     //    return  dd($post) ;
         return view('admin.posts.edit', compact('post','categories'));
     }
@@ -156,9 +158,7 @@ class AdminPostsController extends Controller
     public function post($id){
         
         $post = Post::findOrFail($id)  ; 
-        
-   //     $comments = $post->comments()->whereIsActive(1);
-       
+ 
         $comments = Comment::all()->where('post_id', $id)->where('is_active',1);
         
         

@@ -48,9 +48,12 @@ class CommentRepliesControler extends Controller
             ]; 
         
 //        return $data;
-        CommentReplay::create($data);
+        CommentReply::create($data);
         
-        return view('admin.comments.replies.index');
+        $replies = CommentReply::all();
+        
+        return redirect()->back();
+   //     return view('admin.comments.replies.index', compact('replies'));
     }
 
         /**
@@ -103,7 +106,7 @@ class CommentRepliesControler extends Controller
       
       CommentReply::findOrFail($id)->update($request->all());
       
-      return redirect()->back();
+      return redirect('admin/comment/replies');
       
   //    return $request;
         

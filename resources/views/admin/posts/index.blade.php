@@ -34,7 +34,7 @@
             <!--    <td>{{$post->user->name}}</td> -->
                 <td>{{$post->category ? $post->category->name : 'No category'}} </td>
                 <td><a href="{{route('homepost',$post->id)}}">View Post</a></td>
-                <td><a href="{{route('comments.index',$post->id)}}">View Comments</a></td>
+                <td><a href="{{route('comments.show',$post->id)}}">View Comments</a></td>
                 <td>{{$post->created_at }}</td>
                 <td>{{$post->updated_at }}</td>
             </tr>
@@ -43,4 +43,9 @@
         
         </tbody>
         </table>
+    <div class="row">
+        <div class="col-sm-6 col-offset-5">
+            {{$posts->render()}}
+        </div>
+    </div>
 @endsection

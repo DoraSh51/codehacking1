@@ -26,7 +26,8 @@ Route::get('admin/users/create','AdminUsersController@create')->name('create');
 
 Route::get('admin/users/{id}/edit','AdminUsersController@edit')->name('edit');
 
-Route::get('/post/{id}','AdminPostsController@post')->name('homepost');
+//Route::get('/post/{id}','AdminPostsController@post')->name('homepost');
+Route::get('/post/{slug}','AdminPostsController@post')->name('homepost');
 
 
 //Route::middleware(['admin'])->group(function () {
@@ -55,7 +56,7 @@ Route::get('admin/posts/{id}/edit','AdminPostsController@edit')->name('postedit'
 
 Route::get('admin/categories/{id}/edit','AdminCategoriesController@edit')->name('categoryedit');
 
-Route::post('comment/replay','CommentRepliesControler@createReply');
+Route::post('comment/reply','CommentRepliesControler@createReply');
 
 
 

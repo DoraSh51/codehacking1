@@ -11,13 +11,15 @@
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/categories/edit.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/CommentRepliesControler.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Post.php</file>
+            <file>file:/D:/wamp/www/codehacking/resources/views/admin/comments/show.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/Controller.php</file>
+            <file>file:/D:/wamp/www/codehacking/resources/views/admin/comments/replies/show.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/categories/index.blade.php</file>
+            <file>file:/D:/wamp/www/codehacking/app/Http/Middleware/Admin.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/post.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/posts/edit.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/PostCommentsControler.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/users/edit.blade.php</file>
-            <file>file:/D:/wamp/www/codehacking/database/migrations/2018_07_31_100712_create_comment_replays_table.php</file>
             <file>file:/D:/wamp/www/codehacking/app/User.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Requests/UsersEditRequest.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/AdminPostsController.php</file>
@@ -27,7 +29,6 @@
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/index.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/layouts/blog-post.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/routes/web.php</file>
-            <file>file:/D:/wamp/www/codehacking/resources/views/admin/media/index.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Requests/UsersRequest.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/AdminUsersController.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/posts/create.blade.php</file>
@@ -36,6 +37,7 @@
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/media/create.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/posts/index.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Role.php</file>
+            <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/Auth/RegisterController.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Controllers/HomeController.php</file>
             <file>file:/D:/wamp/www/codehacking/resources/views/admin/users/index.blade.php</file>
             <file>file:/D:/wamp/www/codehacking/app/Http/Requests/PostsCreateRequest.php</file>

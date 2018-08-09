@@ -2,8 +2,9 @@
 
 @section('content')
 
-
+    @if (count($comments) >0)
     <h1>Comments</h1>
+    
         <table class="table">
             <thead>
                 <tr>
@@ -19,7 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                
+                @foreach ($comments as $comment)
                 <tr>
                     <td>{{$comment->id}}</td>
                     <td>{{$comment->author}}</td>
@@ -53,10 +54,15 @@
                     </td>
                      
                 </tr>
-                
+                @endforeach
      
             </tbody>
         </table>
+    
+    @else 
+    
+    <h1 class="text-center">No Comments</h1>
    
-
+    @endif
+    
 @endsection
